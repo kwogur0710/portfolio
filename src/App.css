@@ -1,38 +1,131 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    width: 100vw;
+    font-family: 'NotoMedium';
+    text-align: center; 
+    background-color: #f1eded;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Profile-header {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Profile-IMG {
+    width: auto;
+    height: 50vh;
+}
+.Profile-INFO {
+    justify-content: center;
+    align-items: center;
+}
+.Profile-Grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1vh 10px;
+    margin-bottom: 10px;
+}
+.Project {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Project-header {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'NotoMedium';
+}
+.Project-IMG {
+    width: auto;
+    height: 60vh;
+}
+.Project-INFO {
+    min-width: 450px;
+    max-width: 50vw;
+}
+.Project-Grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 30px 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.github-ICON {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+}
+.button-Group {
+    display: flex;
+    width: 100%;
+}
+.button-Link {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 10px;
+    color: black;
+    border-style: solid;
+    border-width: 0.1px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration-line: none;
+}
+.button-Link:hover {
+    background-color: orange;
+}
+.font20 {
+    font-size: 20px;
+    font-family: 'NotoBold';
+}
+.font18 {
+    text-align: left;
+    font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+    font-family: 'NotoBlack';
+    src: url(./assets/fonts/Noto_Sans_KR/NotoSansKR-Black.otf);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+    font-family: 'NotoBold';
+    src: url(./assets/fonts/Noto_Sans_KR/NotoSansKR-Bold.otf);
+}
+@font-face {
+    font-family: 'NotoMedium';
+    src: url(./assets/fonts/Noto_Sans_KR/NotoSansKR-Medium.otf);
+}
+@font-face {
+    font-family: 'NotoLight';
+    src: url(./assets/fonts/Noto_Sans_KR/NotoSansKR-Light.otf);
+}
+@font-face {
+    font-family: 'NotoRegular';
+    src: url(./assets/fonts/Noto_Sans_KR/NotoSansKR-Regular.otf);
+}
+@font-face {
+    font-family: 'NotoThin';
+    src: url(./assets/fonts/Noto_Sans_KR/NotoSansKR-Thin.otf);
 }
