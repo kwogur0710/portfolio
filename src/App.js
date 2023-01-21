@@ -1,6 +1,15 @@
 import './App.css';
+/*
+import profileIMG from 'public/image/profile.jpeg';
+import recipeIMG from 'public/image/recipe.png';
+import militaryIMG from 'public/image/military.png';
+*/
+import profileIMG from './assets/image/profile.jpeg';
+import recipeIMG from './assets/image/recipe.png';
+import militaryIMG from './assets/image/military.png';
 
 const App = () => {
+    console.log(process.env.PUBLIC_URL);
     return (
         <div className="App">
             <header className="App-header">
@@ -9,7 +18,7 @@ const App = () => {
                 </h1>
             </header>
             <section className="Profile-header">
-                <img src={require('./assets/image/profile.jpeg')} className="Profile-IMG" alt="Profile" />
+                <img src={profileIMG} className="Profile-IMG" alt="Profile" />
                 <div className="Profile-INFO">
                     <h1>기본정보 </h1>
                     <div className="Profile-Grid">
@@ -28,7 +37,7 @@ const App = () => {
             </section>
             <Project
                 title="재료로 검색하는 레시피"
-                imgsrc={require('./assets/image/recipe.png')}
+                imgsrc={recipeIMG}
                 skill="React-Native, Sequelize, mysql, Expo, Open-API"
                 time="2022.03~2022.12 (8개월)"
                 plan="자취생들의 배달음식으로 인한 식비 부담을 줄이기 위해 집에 있는 재료를 활용하여 요리할 수 있도록 재료로 레시피를 검색하는 어플을 만들게 되었습니다."
@@ -37,7 +46,7 @@ const App = () => {
             />
             <Project
                 title="전역일 계산기"
-                imgsrc={require('./assets/image/military.png')}
+                imgsrc={militaryIMG}
                 skill="React-Native"
                 time="2022.12.26~2023.1.10(15일)"
                 plan="군 복무중 진급일, 전역일등을 쉽게 확인할수 있습니다. 추후에는 육, 해, 공 모두 사용 가능하도록 업데이트 할 예정입니다."
