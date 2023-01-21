@@ -9,7 +9,6 @@ import recipeIMG from './assets/image/recipe.png';
 import militaryIMG from './assets/image/military.png';
 
 const App = () => {
-    console.log(process.env.PUBLIC_URL);
     return (
         <div className="App">
             <header className="App-header">
